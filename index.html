@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="global.css">
+  <script defer src="global-variables.js"></script>
+  <script src="mock-logins.js"></script>
+</head>
+<body>
+<!-- Login Modal Begin-->
+<!-- <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipientUsername" class="col-form-label">Username:</label>
+            <input type="text" class="form-control" id="recipientUsername" style="font-family: arial;">
+          </div>
+          <div class="mb-3">
+            <label for="recipientPassword" class="col-form-label">Password:</label>
+            <input type="password" class="form-control" id="recipientPassword">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="loginBtn" data-bs-dismiss="modal">Login</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Login Modal End -->
+
+<!-- Navbar Start -->
+  <nav class="navBar">
+    <div id="topLogo">
+      <h3>KeyBuddy</h3>
+    </div>
+    <div id="topNavItems">
+      <div id="topNavItems">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <ul id="productMenu" class="dropdownMenu">
+              
+            </ul>
+        </li>
+      </div>
+      <div id="topNavItems">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdownMenu">
+              <li><a class="dropdownItem" href="#"></a></li>
+              <li><a class="dropdownItem" href="#">Another action</a></li>
+              <li><hr class="dropdownDivider"></li>
+              <li><a class="dropdownItem" href="#">Something else here</a></li>
+            </ul>
+        </li>
+      </div>
+      <div id="topNavItems">
+        <button id="topNavButton">Get KeyBuddy</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar End -->
+
+  <!-- hero section  -->
+  <section id="contentSection">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.pexels.com/photos/5655150/pexels-photo-5655150.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/5655150/pexels-photo-5655150.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/5655150/pexels-photo-5655150.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
