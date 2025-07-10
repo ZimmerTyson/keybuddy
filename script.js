@@ -7,7 +7,33 @@ function handleAuthButtons() {
     ' <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo">Signup</button>';
   }
 }
+
 handleAuthButtons();
+
+const productDropdown = document.querySelector(".productDropdown");
+const productMenu = document.getElementById("productMenu");
+const resourceDropdown = document.querySelector(".resourceDropdown");
+const resourceMenu = document.getElementById("resourceMenu");
+
+productDropdown.addEventListener("mouseenter", () => {
+  productMenu.classList.remove("hidden");
+});
+
+productDropdown.addEventListener("mouseleave", () => {
+  productMenu.classList.add("hidden");
+});
+
+
+resourceDropdown.addEventListener("mouseenter", () => {
+  resourceMenu.classList.remove("hidden");
+});
+
+resourceDropdown.addEventListener("mouseleave", () => {
+  resourceMenu.classList.add("hidden");
+});
+
+
+  
 
 function logout() {
   localStorage.removeItem("user");
