@@ -5,7 +5,7 @@ document.addEventListener('keydown', function(e) {
   console.log('Current Pressed Keys: ', pressedKeys);
 });
 
-document.addEventListener('keyup', fucntion2(e) {
+document.addEventListener('keyup', function(e) {
   pressedKeys.delete(e.code);
   console.log('Current Pressed keys:', pressedKeys);
 });
