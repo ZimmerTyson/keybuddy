@@ -1,3 +1,6 @@
+console.log('content script has loaded!');
+console.log('chrome.runtime exists:', !!chrome.runtime);
+
 let pressedKeys = new Set();
 
 
@@ -24,6 +27,11 @@ document.addEventListener('keydown', function(e) {
       let activeElement = document.activeElement;
       console.log('Active element:', activeElement);
       console.log('Element Type:', activeElement.tagName);
+
+      if(activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA') {
+        activeElement.value = response.text;
+        console.log('Text has been inputted');
+      }
 
     } else {
       console.log('No shortcut found for:', combo);
