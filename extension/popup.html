@@ -7,13 +7,44 @@
       width: 400px;
       padding: 20px;
     }
+    .shortcutsList {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .formGroup {
+      margin: 10px 0;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+    }
   </style>
 </head>
 <body>
-  <h2>Keybuddy</h2>
+  <h2>KeyBuddy</h2>
 
-  <div class="shortcutsList"></div>
+  <div class="shortcutsList">
+    <!-- This is where exiting shortcuts will appear -->
+  </div>
+  <hr>
 
+  <h3>Add New Shortcut</h3>
+  <div class="formGroup">
+    <label>Keyboard Combo (e.g., Ctrl+Alt+T):</label>
+    <input id="text" placeholder="Ctrl+Alt+T">
+  </div>
+  <div class="formGroup">
+    <label>Replacement Text:</label>
+    <textarea id="textInput" placeholder="Hey there, ...."></textarea>
+  </div>
 
+  <button id="addShortcut">Add Shortcut</button>
+
+  <script src="popup.js"></script>
 </body>
 </html>

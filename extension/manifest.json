@@ -11,5 +11,9 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab"]
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "KeyBuddy"
+  },
+  "permissions": ["activeTab", "storage"]
 }
